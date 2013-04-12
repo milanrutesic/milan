@@ -1,0 +1,1 @@
+<?php $lang->translate("active");$lang->translate("canceled");$lang->translate("pending"); ?>

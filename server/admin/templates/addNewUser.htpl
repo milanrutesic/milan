@@ -1,0 +1,38 @@
+<script type="text/javascript" src="../library/jQuery/jquery.validate.pack.js"></script>
+<script type="text/javascript" src="../library/js/adminAddNewUserValidation.js"></script>
+
+<table width='100%' cellpadding='5' cellspacing='0' border='0'>
+	<tr>
+		<td width='50'>
+			<a href='?action=users'><img src='images/icons/adminIcons/back.png' border='0' title='Back' alt='Back' align='absmiddle'>Back</a>
+		</td>
+		<td width='400'>
+			<div class='{$messageClass}'>{$message}</div>
+		</td>
+	</tr>
+</table>
+<form action='?action=addNewUser' method='POST' id='addNewUserForm'>
+	<input type='hidden' name='addNewUser' value='1'>
+	<table cellpadding='10' cellspacing='0'>
+		<tr>
+			<td align='right'>Name</td>
+			<td><input type='text' name='name' class='required'></td>
+		</tr>
+		<tr>
+			<td align='right'>Email</td>
+			<td><input type='text' name='email' class='required' remote="?action=checkEmailRegistration&ajax=1"></td>
+		</tr>
+		<tr>
+			<td align='right'>Password</td>
+			<td><input type='password' id='password' name='password' class='required'></td>
+		</tr>
+		<tr>
+			<td align='right'>Confirm Password</td>
+			<td><input type='password' name='confirmPassword' class='required' equalto="#password"></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td align='left'><input style='width: 200px;' type='submit' value='Add New User'></td>
+		</tr>
+	</table>
+</form>

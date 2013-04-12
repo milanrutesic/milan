@@ -1,0 +1,4 @@
+RewriteEngine On 
+RewriteRule ^(/)?$ index.php [QSA]
+RewriteRule ^([^/\.]+)(/)?$ index.php?engine=$1 [QSA]
+RewriteRule ^([^/\.]+)/([^/\.]+)(/)?$ index.php?engine=$1&action=$2 [QSA] [L]

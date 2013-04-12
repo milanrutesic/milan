@@ -1,0 +1,60 @@
+<header class="listHeader shadow">
+    {{lang.listings}} &raquo; {{listTitle}}
+    <div class="right">
+        <button button-directive ng-controller="AddEdit" ng-click="displayWindow(-1)">addNew</button>
+        <button button-directive>search</button>
+        <button button-directive>previous</button>
+        <span>{{resFrom}} {{lang.to}} {{resTo}} {{lang.of}} {{resOf}}</span>
+        <button button-directive>next</button>
+    </div>
+</header>
+
+<section class="listItem shadow clearfix" ng-repeat="listing in listData">
+    <aside>
+        <div class="listImage" style="background-image: url('{{listing.images[0].url}}')">
+            <img src="img/icons/24x24/she_users.png"/>
+        </div>
+    </aside>
+    <article class="itemDetails">
+        <table width="100%">
+            <tr>
+                <td class="titles">{{lang.id}}:</td>
+                <td class="values">{{listing.uniqueID}}</td>
+                <td class="titles">{{lang.category}}:</td>
+                <td class="values">{{listing.category}}</td>
+            </tr>
+            <tr>
+                <td class="titles">{{lang.agent}}:</td>
+                <td class="values">{{listing.listingAgent1.name}}</td>
+                <td class="titles">{{lang.vendor}}:</td>
+                <td class="values">{{listing.vendorDetails.name}}</td>
+            </tr>
+            <tr>
+                <td class="titles">{{lang.status}}:</td>
+                <td class="values">{{listing.status}}</td>
+                <td class="titles">{{lang.price}}:</td>
+                <td class="values">{{listing.price.value | currency}}</td>
+            </tr>
+            <tr>
+                <td class="titles">{{lang.address}}:</td>
+                <td class="values">{{listing.address.street}} {{listing.address.streetNumber}}, {{listing.address.postcode}} {{listing.address.site}}, {{listing.address.country}}</td>
+                <td class="titles">{{lang.priceView}}:</td>
+                <td class="values">{{listing.priceView}}</td>
+            </tr>
+        </table>        
+    </article>
+    <div class="right actionsContainer">
+        <button button-directive class="icon details onWhiteBg">details</button>
+        <button button-directive class="icon edit onWhiteBg" ng-controller="AddEdit" ng-click="displayWindow($index)">edit</button>
+        <button button-directive class="icon share onWhiteBg">share</button>
+        <button button-directive class="icon delete onWhiteBg">deleteAction</button>
+    </div>
+</section>
+
+<header class="listHeader listFooter shadow">
+    <div class="right">
+        <button button-directive>previous</button>
+        <span>{{resFrom}} {{lang.to}} {{resTo}} {{lang.of}} {{resOf}}</span>
+        <button button-directive>next</button>
+    </div>
+</header>

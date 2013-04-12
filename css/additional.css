@@ -1,0 +1,164 @@
+/*
+ * Red border for development purposes
+ */
+.redBorder {
+    border: 1px solid red !important;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.center {
+    text-align: center;
+}
+
+.top {
+    vertical-align: top !important;
+}
+
+.shadow {
+    -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+    -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
+}
+/* ====================================================
+    Status message container
+   ====================================================*/
+#statusMsgContainer {
+    padding: 2px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+#statusMsg {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    background-color: yellow;
+}
+
+#progressbar {
+    position: absolute;
+    width: 200px;
+    height: 10px !important;
+}
+/* ====================================================
+    List of Residentials, Rentals, Holiday Rentals...
+   ====================================================*/
+.listHeader {
+    height: 2.75em;
+    line-height: 2.75em;
+    text-indent: 0.75em;
+    padding: 0px;
+    padding-right: 0.75em;
+    padding-bottom: 5px;
+    color: #FFFFFF;
+    background-color: #036993;
+}
+
+.listFooter {
+    margin-top: 5px;
+}
+
+.listItem {
+    margin: 5px 0 0 0;
+    padding: 5px;
+}
+
+.listImage {
+    background: #036993;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 128px;
+    max-width: 186px;
+    text-align: left;
+}
+
+.itemDetails {
+    position: relative;
+}
+
+.itemDetailsLeft {
+    width: 48%;
+    float: left;
+}
+
+.titles {
+    text-align: left;
+    padding: 0 5px 0 0;
+    border: 0px solid red;
+    width: 15%;
+    vertical-align: top;
+    color: #777777;
+    font-size: 0.923em;
+    line-height: 1.2em;
+}
+
+.values {
+    border: 0px solid red;
+    width: 35%;
+    vertical-align: top;
+    font-size: 0.923em;
+    line-height: 1.2em;
+}
+
+.itemDetailsRight {
+    width: 48%;
+    float: right;
+    height: 120px;
+}
+
+.actionsContainer {
+    margin: 5px 0 0 0;
+}
+
+/* =========================================================
+    Form elements
+   =========================================================*/
+select {
+    min-width: 70px;
+    min-height: 30px;
+}
+
+.formContainer {
+    width: 100%;
+}
+
+.formContainer .left {
+    width: 30%;
+    margin: 0 0 10px 0;
+    text-align: right;
+}
+
+.formContainer .right {
+    width: 69%;
+    margin: 0 0 10px 0;
+    text-align: left;
+}
+
+.rightHalf {
+    width: 49%;
+    float: right;
+}
+
+.leftHalf {
+    width: 49%;
+    float: left;
+}
+
+.clearBoth {
+    clear: both;
+}
+input {
+    border:1px solid #fafafa;
+    outline: none;
+    -webkit-box-shadow: 0 0 6px #007eff;
+       -moz-box-shadow: 0 0 5px #007eff;
+            box-shadow: 0 0 5px #007eff; 
+}
+

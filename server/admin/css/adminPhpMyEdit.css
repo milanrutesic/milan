@@ -1,0 +1,61 @@
+/**************************************** 
+ ************** B O D Y *****************
+ ****************************************/
+body
+{
+	margin: 0px;
+	padding: 0px;
+    font-family: 'Lucida Concole',  Arial, Verdana;
+    font-size: 10pt;
+    background: #FFFFFF;
+}
+
+a {
+	text-decoration: none;
+	color: #1B75BB;
+}
+a:link { color: #1B75BB; }
+a:visited { color: #1B75BB; }
+a:hover { color: #000; }
+
+/**************************************** 
+ ************** F O R M *****************
+ ****************************************/
+input {
+	font-size: 10pt;
+	font-weight: normal;
+	vertical-align: middle;
+	border: 1px solid #777777;
+	-moz-border-radius: 5px;  
+	-webkit-border-radius: 5px;
+}
+
+textarea {
+	border: 1px solid #777777;
+	-moz-border-radius: 5px;  
+	-webkit-border-radius: 5px;	
+	font-size: 10pt;
+}
+
+/**************************************** 
+ ********** E N D  O F  F O R M *********
+ ****************************************/
+td {
+	font-size: 11pt;
+}
+tr { background-color: #DDDDDD}
+.normal { background-color: #DDDDDD }
+.highlight { background-color: #FFCC99 }
+
+hr.pme-hr		     { border: 0px solid; padding: 0px; margin: 0px; border-top-width: 1px; height: 1px; }
+table.pme-main 	     { border: #333333 0px solid; border-collapse: collapse; border-spacing: 0px; width: 100%; }
+table.pme-navigation { border: #333333 0px solid; border-collapse: collapse; border-spacing: 0px; width: 100%; }
+tr.pme-navigation, tr.pme-sortinfo, tr.pme-queryinfo {background-color: #fff; font-weight: bold;}
+td.pme-navigation-0, td.pme-navigation-1 { white-space: nowrap; width: 10px; }
+th.pme-header	     { border: #FFFFFF 1px solid; padding: 4px; background: #ccc; }
+td.pme-key-0, td.pme-value-0, td.pme-help-0, td.pme-navigation-0, td.pme-cell-0,
+td.pme-key-1, td.pme-value-1, td.pme-help-0, td.pme-navigation-1, td.pme-cell-1,
+td.pme-sortinfo, td.pme-filter { border: #FFFFFF 1px solid; padding: 3px; }
+td.pme-buttons { text-align: left;   }
+td.pme-message { text-align: center; }
+td.pme-stats   { text-align: right;  }

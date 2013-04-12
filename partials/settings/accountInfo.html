@@ -1,0 +1,24 @@
+<header class="listHeader shadow">
+    {{lang.settings}} &raquo; {{lang.accountInfo}}
+</header>
+
+<section>
+    <div class="formContainer">
+        <form name="accountInfo" id="accountInfo"  ng-submit="changeAccountInfo()" ng-controller="AccountInfo">
+            <div class="left">{{lang.email}}</div>
+            <div class="right">{{email}}</div>
+            
+            <div class="left">{{lang.name}}</div>
+            <div class="right"><input type="text" ng-model="name" name="name" id="name" class="validate[required]"/></div>
+            
+            <div class="left">{{lang.password}}</div>
+            <div class="right"><input type="password" ng-model="password" name="password" id="password" class="validate[equals[confirmPassword]]"/></div>
+            
+            <div class="left">{{lang.confirmPassword}}</div>
+            <div class="right"><input type="password" ng-model="confirmPassword" name="confirmPassword" id="confirmPassword" class="validate[equals[password]]" data-prompt-position="bottomRight"/></div>
+            
+            <div class="left">&nbsp;</div>
+            <div class="right"><button type="submit" class="top" button-directive>save</button></div>
+        </form>
+    </p>
+</section>

@@ -1,0 +1,39 @@
+<header class="listHeader shadow">
+    {{lang.settings}} &raquo; {{lang.language}}
+</header>
+
+<section>
+    <div class='formContainer'><br><br>
+        <form name="localeSelector"  ng-submit="changeLocale()" ng-controller="Locale">
+            <div class="left">{{lang.selectNewLang}}:</div>
+            <div class="right">
+                <select name="locale" ng-model="localeSelected">
+                    <option value="en_US">{{lang.english}}</option>
+                    <option value="zh_CN">{{lang.chinese}}</option>
+                    <option value="cs_CZ">{{lang.czech}}</option>
+                    <option value="de_DE">{{lang.german}}</option>
+                    <option value="da_DK">{{lang.danish}}</option>
+                    <option value="fi_FI">{{lang.finnish}}</option>
+                    <option value="es_ES">{{lang.spanish}}</option>
+                    <option value="fr_FR">{{lang.french}}</option>
+                    <option value="el_GR">{{lang.greek}}</option>
+                    <option value="hr_HR">{{lang.croatian}}</option>
+                    <option value="hu_HU">{{lang.hungarian}}</option>
+                    <option value="it_IT">{{lang.italian}}</option>
+                    <option value="ja_JP">{{lang.japanese}}</option>
+                    <option value="nl_NL">{{lang.dutch}}</option>
+                    <option value="nn_NO">{{lang.norwegian}}</option>
+                    <option value="pl_PL">{{lang.polish}}</option>
+                    <option value="pt_PT">{{lang.portuguese}}</option>
+                    <option value="sr_RS">{{lang.serbian}}</option>
+                    <option value="ru_RU">{{lang.russian}}</option>
+                    <option value="sv_SE">{{lang.swedish}}</option>
+                    <option value="sl_SI">{{lang.slovenian}}</option>
+                    <option value="sk_SK">{{lang.slovak}}</option>
+                    <option value="tr_TR">{{lang.turkish}}</option>
+                </select>
+                <button type="submit" button-directive>save</button>
+            </div>
+        </form>
+    </div>
+</section>

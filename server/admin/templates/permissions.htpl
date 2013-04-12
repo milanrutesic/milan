@@ -1,0 +1,18 @@
+<div class='{$messageClass}' style='{$style}'>{$message}</div>
+<form action='?action=permissions' method='POST'>
+	<input type='hidden' name='savePermissions' value='1'>
+	<table width='100%' cellpadding='10' cellspacing='1'>
+		{section name=listOfRoles loop=$roles}
+			<tr bgcolor="{cycle values="#ccc,#eee"}">
+				<td valign='top'>
+					<u>{$roles[listOfRoles].name}</u><br>
+					{assign var=arrayKey value=$roles[listOfRoles].id}
+					{html_checkboxes name="resources[$arrayKey]" options=$checkboxes[$arrayKey] selected=$selected[$arrayKey] separator='<br />'}
+				</td>
+			</tr>
+		{/section}
+		<tr>
+			<td><input type='submit' style='width: 100px;' value='Save'></td>
+		</tr>
+	</table>
+</form>		

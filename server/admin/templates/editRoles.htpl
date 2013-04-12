@@ -1,0 +1,24 @@
+<table width='100%' cellpadding='5' cellspacing='0' border='0'>
+	<tr>
+		<td width='50'>
+			<a href='?action=users'><img src='images/icons/adminIcons/back.png' border='0' title='Back' alt='Back' align='absmiddle'>Back</a>
+		</td>
+		<td width='400'>
+			<div class='{$messageClass}'>{$message}</div>
+		</td>
+	</tr>
+	<tr>
+		<td></td>
+		<td>
+			Roles of {$nameOfUser}<br><br>
+			<form action='?action=editRoles' method='POST'>
+				<input type='hidden' name='saveRoles' value='1'>
+				<input type='hidden' name='userId' value='{$userId}'>
+				<input type='hidden' name='nameOfUser' value='{$nameOfUser}'>
+				{html_checkboxes name='userRoles' options=$rolesAndIds selected=$selectedRoles separator='<br />'}
+				<br>
+				<input type='submit' style='width: 100px;' value='Save'>
+			</form>
+		</td>
+	</tr>
+</table>

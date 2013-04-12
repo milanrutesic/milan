@@ -1,0 +1,19 @@
+---
+applications:
+  .:
+    name: alefos
+    framework:
+      name: php
+      info:
+        mem: 128M
+        description: PHP Application
+        exec: 
+    infra: eu-aws
+    url: ${name}.${target-base}
+    mem: 128M
+    instances: 1
+    services:
+      alefos:
+        type: mysql
+      alefos_mongo:
+        type: mongodb
